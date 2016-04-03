@@ -1,0 +1,37 @@
+body {
+	background: url(/images/us-web.jpg);
+	background-color: #fdfdfd;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center top;
+	margin: auto;
+	color: #3a3a3a;
+}
+.wrapper {
+	margin: auto;
+	margin-top:40%;
+}
+.content {
+	height: 400px; /* temp height */
+	background: #fdfdfd;
+}
+.container {
+	margin: auto;
+}
+.container ul {
+	margin: 0;
+}
+.mask img {
+	display: block; /* Prevents bg bleed through under image in some browsers */
+}
+h1 {
+	padding: 0;
+	margin: 0;
+}
+.details {
+	text-align: center;
+	width: 100%;
+}
+.details span {
+	padding: 0.5em;
+}
