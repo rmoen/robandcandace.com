@@ -1,11 +1,19 @@
 <div class="details">
-	<span>May 14th 2016</span> &hearts;
-	<span>The Old Ranch, Silver Falls</span>
+	<div class="intro">
+		<p>Together with their families</p>
+		<p class="huge">Candace Jean Barr</p>
+		<p>and</p>
+		<p class="huge">Robert Thomas Moen</p>
+		<p>request the pleasure of your company</p>
+		<p class="big">Saturdy, the Fourteenth of May</p>
+		<p>at</p>
+		<p class="big">The Old Ranch, Silver Falls State Park</p>
+	</div>
+	<form>
+		<input type="text" placeholder="Party name" ng-model="rsvpForm.newReservation.name" /> <br />
+		<input type="text" placeholder="Comments" ng-model="rsvpForm.newReservation.comments" /><br />
+		<button ng-click="rsvpForm.addReservation()">RSVP!</button>
+	</form>
+
 </div>
-<form>
-  <label>Party Name: </label>
-  <input type="text" ng-model="rsvpForm.newReservation.name" />
-  <label>Comments: </label>
-  <input type="text" ng-model="rsvpForm.newReservation.comments" />
-  <button ng-click="rsvpForm.addReservation()">RSVP!</button>
-</form>
+
