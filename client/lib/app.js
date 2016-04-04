@@ -1,1 +1,5 @@
-angular.module('rsvp', ['angular-meteor', 'ui.router']);
+angular.module('rsvp', [
+	'angular-meteor',
+	'ui.router',
+	'ui.bootstrap'
+]);
