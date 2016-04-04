@@ -1,12 +1,16 @@
 <form>
+
+	<!-- Name of party -->
 	<fieldset class="form-group">
 		<label for="partyName">Name of your party</label>
 		<input type="text" class="form-control" id="partyName" ng-model="rsvpForm.newRsvp.name" placeholder="Please enter the names of your party">
 		<small class="text-muted">So we can mark you down as coming!</small>
 	</fieldset>
+
+	<!-- Party size -->
 	<fieldset class="form-group">
-		<label for="partyCount">Number of people in your party</label>
-		<select class="form-control" id="partyCount" ng-model="rsvpForm.newRsvp.count">
+		<label for="partySize">Number of people in your party</label>
+		<select class="form-control" id="partySize" ng-model="rsvpForm.newRsvp.count">
 			<option>1</option>
 			<option>2</option>
 			<option>3</option>
@@ -15,17 +19,15 @@
 		</select>
 		<small class="text-muted">So we can be sure to have enough food.  Please be sure to carpool as free parking is limited.</small>
 	</fieldset>
+
+	<!-- Email Address -->
 	<fieldset class="form-group">
 		<label for="emailAddress">Email address</label>
 		<input type="email" class="form-control" id="emailAddresss" ng-model="rsvpForm.newRsvp.email" placeholder="Enter email">
 		<small class="text-muted">So we can contact you with important information.</small>
 	</fieldset>
-	<fieldset class="form-group">
-		<label for="comments">Comments</label>
-		<input type="text" class="form-control" id="comments" ng-model="rsvpForm.newRsvp.comments" placeholder="Tell us what you think">
-		<small class="text-muted">Tell us something.</small>
-	</fieldset>
 
+	<!-- Camping -->
 	<fieldset class="form-group"><label>Camping</label>
 	<div class="checkbox">
 		<label><input type="checkbox" ng-model="rsvpForm.newRsvp.camping"> Want to stay in the cabin or camp outside?</label><br />
@@ -33,5 +35,14 @@
 	</div>
 	</fieldset>
 
-	<button ng-click="rsvpForm.addRsvp()" class="btn btn-primary">RSVP!</button>
+	<!-- Comments -->
+	<fieldset class="form-group">
+		<label for="comments">Comments</label>
+		<input type="text" class="form-control" id="comments" ng-model="rsvpForm.newRsvp.comments" placeholder="Tell us what you think">
+		<small class="text-muted">Tell us something.</small>
+	</fieldset>
+
+	<button ng-click="rsvpForm.addRsvp()" class="btn btn-primary btn-lg" aria-label="Register">
+		<span class="glyphicon glyphicon-ok"></span> RSVP
+	</button>
 </form>
