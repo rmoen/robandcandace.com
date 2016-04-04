@@ -9,11 +9,46 @@
 		<p>at</p>
 		<p class="big">The Old Ranch, Silver Falls State Park</p>
 	</div>
-	<form>
-		<input type="text" placeholder="Party name" ng-model="rsvpForm.newReservation.name" /> <br />
-		<input type="text" placeholder="Comments" ng-model="rsvpForm.newReservation.comments" /><br />
-		<button ng-click="rsvpForm.addReservation()">RSVP!</button>
-	</form>
-
 </div>
 
+<form>
+	<fieldset class="form-group">
+		<label for="partyName">Name of your party</label>
+		<input type="text" class="form-control" id="partyName" ng-model="rsvpForm.newRsvp.name" placeholder="Please enter the names of your party">
+		<small class="text-muted">So we can mark you down as coming!</small>
+	</fieldset>
+	<fieldset class="form-group">
+		<label for="partyCount">Number of people in your party</label>
+		<select class="form-control" id="partyCount" ng-model="rsvpForm.newRsvp.count">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<small class="text-muted">So we can be sure to have enough food.</small>
+	</fieldset>
+	<fieldset class="form-group">
+		<label for="emailAddress">Email address</label>
+		<input type="email" class="form-control" id="emailAddresss" ng-model="rsvpForm.newRsvp.email" placeholder="Enter email">
+		<small class="text-muted">So we can contact you with important information.</small>
+	</fieldset>
+	<fieldset class="form-group">
+		<label for="comments">Comments</label>
+		<input type="text" class="form-control" id="comments" ng-model="rsvpForm.newRsvp.comments" placeholder="Tell us what you think">
+		<small class="text-muted">Tell us something.</small>
+	</fieldset>
+
+	<fieldset class="form-group"><label>Camping</label>
+	<div class="checkbox">
+		<label><input type="checkbox" ng-model="rsvpForm.newRsvp.camping"> Want to stay in the cabin or camp outside?</label><br />
+		<small class="text-muted">If so, please bring camp and sleeping gear. The cabin is equipped with wooden bunk beds, so bring your own bedding. Or feel free to bring your own tent and warm stuff should you wish to camp under the stars.</small>
+	</div>
+	</fieldset>
+
+	<fieldset class="form-group">
+		<label>Directions</label>
+
+	</fieldset>
+	<button ng-click="rsvpForm.addReservation()">RSVP!</button>
+</form>
