@@ -5,12 +5,10 @@ angular.module('rsvp').directive('rsvpForm', function () {
 		controllerAs: 'rsvpForm',
 		controller: function ($scope, $reactive) {
 			$reactive(this).attach($scope);
-			this.newReservation = {};
-
-			console.log( 'hi');
-			this.addReservation = () => {
-				Reservations.insert(this.newReservation);
-				this.newReservation = {};
+			this.newRsvp = {};
+			this.addRsvp = () => {
+				Reservations.insert(this.newRsvp);
+				this.newRsvp = {};
 			}
 		}
 	};
