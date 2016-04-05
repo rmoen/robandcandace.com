@@ -27,11 +27,26 @@
 		<small class="text-muted">So we can contact you with important information.</small>
 	</fieldset>
 
+	<!-- Karaoke requests -->
+	<fieldset class="form-group">
+		<label for="karaoke">Karaoke Requests</label>
+		<input type="text" class="form-control" id="karaoke" ng-model="rsvpForm.newRsvp.karaoke" placeholder="Please enter some songs you might want to sing">
+		<small class="text-muted">You don't have to sing Karaoke, but some people will be.</small>
+	</fieldset>
+
 	<!-- Camping -->
 	<fieldset class="form-group"><label>Camping</label>
 	<div class="checkbox">
 		<label><input type="checkbox" ng-model="rsvpForm.newRsvp.camping"> Want to stay in the cabin or camp outside?</label><br />
 		<small class="text-muted">If so, please bring camp and sleeping gear. The cabin is equipped with wooden bunk beds, so bring your own bedding. Or feel free to bring your own tent and warm stuff should you wish to camp under the stars.</small>
+	</div>
+	</fieldset>
+
+	<!-- Helpers -->
+	<fieldset class="form-group"><label>Volunteer</label>
+	<div class="checkbox">
+		<label><input type="checkbox" ng-model="rsvpForm.newRsvp.volunteer"> I would like to help.</label><br />
+		<small class="text-muted">Let us know if you would like to help us during that day.  As we are doing most of this ourselves, it is always nice to have extra helping hands.</small>
 	</div>
 	</fieldset>
 

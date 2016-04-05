@@ -1,6 +1,21 @@
-<ul>
-  <li ng-repeat="rsvp in rsvpList.reservations">
-    {{rsvp.name}}
-    <p>{{rsvp.comments}}</p>
-  </li>
-</ul>
+<table class="table">
+	<tr>
+		<th>Party Name</th>
+		<th>Party Size</th>
+		<th>Email Address</th>
+		<th>Camping</th>
+		<th>Volunteer</th>
+		<th>Karaoke</th>
+		<th>Comments</th>
+	</tr>
+	<tr ng-repeat="rsvp in rsvpList.reservations" ng-init="total=0">
+		<td>{{rsvp.name}}</td>
+		<td>{{rsvp.count}}</td>
+		<td>{{rsvp.email}}</td>
+		<td>{{rsvp.camping == true ? 'yes' : 'no'}}</td>
+		<td>{{rsvp.volunteer == true ? 'yes': 'no'}}</td>
+		<td>{{rsvp.karaoke}}</td>
+		<td>{{rsvp.comments}}</td>
+	</tr>
+</table>
+ Total person count: {{getTotalPeople(rsvpList.reservations)}}

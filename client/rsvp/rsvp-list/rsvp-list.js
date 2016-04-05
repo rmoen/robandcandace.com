@@ -11,6 +11,15 @@ angular.module('rsvp').directive('rsvpList', function () {
 					return Reservations.find({});
 				}
 			});
+			// Hacked way of getting total people
+			$scope.getTotalPeople = function(reservations) {
+				var totalPeople = 0;
+
+				angular.forEach(reservations, function(rsvp) {
+					totalPeople += Number(rsvp.count);
+				});
+				return totalPeople;
+			};
 		}
 	};
 });

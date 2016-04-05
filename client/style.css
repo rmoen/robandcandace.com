@@ -22,6 +22,7 @@ body {
 	margin: 0;
 }
 .mask img {
+	width: 100%;
 	display: block; /* Prevents bg bleed through under image in some browsers */
 }
 h1 {
