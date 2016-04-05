@@ -11,11 +11,11 @@
 	<fieldset class="form-group">
 		<label for="partySize">Number of people in your party</label>
 		<select class="form-control" id="partySize" ng-model="rsvpForm.newRsvp.count">
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
-			<option>5</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
 		</select>
 		<small class="text-muted">So we can be sure to have enough food.  Please be sure to carpool as free parking is limited.</small>
 	</fieldset>
@@ -23,21 +23,21 @@
 	<!-- Email Address -->
 	<fieldset class="form-group">
 		<label for="emailAddress">Email address</label>
-		<input type="email" class="form-control" id="emailAddresss" ng-model="rsvpForm.newRsvp.email" placeholder="Enter email">
+		<input type="email" class="form-control" id="emailAddresss" ng-model="rsvpForm.newRsvp.email" placeholder="Please enter your email address">
 		<small class="text-muted">So we can contact you with important information.</small>
 	</fieldset>
 
 	<!-- Karaoke requests -->
 	<fieldset class="form-group">
 		<label for="karaoke">Karaoke Requests</label>
-		<input type="text" class="form-control" id="karaoke" ng-model="rsvpForm.newRsvp.karaoke" placeholder="Please enter some songs you might want to sing">
+		<input type="text" class="form-control" id="karaoke" ng-model="rsvpForm.newRsvp.karaoke" placeholder="Please enter your favorite Karaoke songs">
 		<small class="text-muted">You don't have to sing Karaoke, but some people will be.</small>
 	</fieldset>
 
 	<!-- Camping -->
 	<fieldset class="form-group"><label>Camping</label>
 	<div class="checkbox">
-		<label><input type="checkbox" ng-model="rsvpForm.newRsvp.camping"> Want to stay in the cabin or camp outside?</label><br />
+		<label><input type="checkbox" ng-model="rsvpForm.newRsvp.camping">Want to stay in the cabin or camp outside?</label><br />
 		<small class="text-muted">If so, please bring camp and sleeping gear. The cabin is equipped with wooden bunk beds, so bring your own bedding. Or feel free to bring your own tent and warm stuff should you wish to camp under the stars.</small>
 	</div>
 	</fieldset>
@@ -45,7 +45,7 @@
 	<!-- Helpers -->
 	<fieldset class="form-group"><label>Volunteer</label>
 	<div class="checkbox">
-		<label><input type="checkbox" ng-model="rsvpForm.newRsvp.volunteer"> I would like to help.</label><br />
+		<label><input type="checkbox" ng-model="rsvpForm.newRsvp.volunteer">We would like to help.</label><br />
 		<small class="text-muted">Let us know if you would like to help us during that day.  As we are doing most of this ourselves, it is always nice to have extra helping hands.</small>
 	</div>
 	</fieldset>
@@ -53,7 +53,7 @@
 	<!-- Comments -->
 	<fieldset class="form-group">
 		<label for="comments">Comments</label>
-		<input type="text" class="form-control" id="comments" ng-model="rsvpForm.newRsvp.comments" placeholder="Tell us what you think">
+		<textarea class="form-control" id="comments" ng-model="rsvpForm.newRsvp.comments" placeholder="Tell us what you think"></textarea>
 		<small class="text-muted">Tell us something.</small>
 	</fieldset>
 

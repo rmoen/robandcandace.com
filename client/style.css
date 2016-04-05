@@ -14,9 +14,11 @@ body {
 .content {
 	background: #fdfdfd;
 }
+.view {
+	padding: 1em;
+}
 .container {
 	margin: auto;
-	padding: 1em;
 }
 .container ul {
 	margin: 0;

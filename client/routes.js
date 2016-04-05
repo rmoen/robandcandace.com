@@ -16,6 +16,10 @@ angular.module('rsvp').config(function ($urlRouterProvider, $stateProvider, $loc
 		.state('rsvpList', {
 			url: '/rsvp-list',
 			template: '<rsvp-list></rsvp-list>'
+		})
+		.state('rsvpConfirmation', {
+			url: '/confirmation',
+			templateUrl: 'client/rsvp/rsvp-confirmation/confirmation.html'
 		});
 	$urlRouterProvider.otherwise('/');
 });

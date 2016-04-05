@@ -16,7 +16,7 @@ angular.module('rsvp').directive('rsvpList', function () {
 				var totalPeople = 0;
 
 				angular.forEach(reservations, function(rsvp) {
-					totalPeople += Number(rsvp.count);
+					totalPeople += Number(rsvp.count) || 0;
 				});
 				return totalPeople;
 			};

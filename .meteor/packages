@@ -21,3 +21,4 @@ angular
 angularui:angular-ui-router
 twbs:bootstrap
 angularui:angular-ui-bootstrap
+angular:angular-cookies
