@@ -1,9 +1,13 @@
 angular.module('rsvp').config(function ($urlRouterProvider, $stateProvider, $locationProvider) {
 	$locationProvider.html5Mode(true);
 	$stateProvider
-		.state('rsvpDetails', {
+		.state('rsvpInvitation', {
 			url: '/',
 			templateUrl: 'client/rsvp/rsvp-invitation/invitation.html'
+		})
+		.state('rsvpItinerary', {
+			url: '/itinerary',
+			templateUrl: 'client/rsvp/rsvp-itinerary/itinerary.html'
 		})
 		.state('rsvpForm', {
 			url: '/rsvp',
