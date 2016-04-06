@@ -3,7 +3,7 @@ angular.module('rsvp').config(function ($urlRouterProvider, $stateProvider, $loc
 	$stateProvider
 		.state('rsvpDetails', {
 			url: '/',
-			templateUrl: 'client/rsvp/rsvp-details/details.html'
+			templateUrl: 'client/rsvp/rsvp-invitation/invitation.html'
 		})
 		.state('rsvpForm', {
 			url: '/rsvp',
